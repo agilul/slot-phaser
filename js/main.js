@@ -372,7 +372,7 @@ function checkResults() {
 }
 
 function updateCredits(amount) {
-    winning.play();
+    if (amount > 0) winning.play();
     
     credits += amount;
     creditsText.text = 'Crediti: ' + credits;
